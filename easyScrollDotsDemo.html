@@ -1,0 +1,709 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>WST</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--test template style-->
+<style>html{height:100%}*{margin:0;padding:0}body{font:normal 15px 'trebuchet ms',arial,sans-serif; url(background.png) repeat;color:#777;}p{padding:0 0 20px 0;line-height:1.7em}img{border:0}h1,h2,h3,h4,h5,h6{font:bold 28px 'century gothic',arial,sans-serif;color:#068900;margin:0 0 15px 0;padding:15px 0 5px 0}h2{font:normal 115% 'century gothic',arial,sans-serif;color:#068900}h4,h5,h6{margin:0;padding:0 0 5px 0;font:normal 25px arial,sans-serif;color:#068900}h5,h6{font: 21px arial,sans-serif;padding:0 0 15px 0;color:#000}h6{color:#362C20}a,a:hover{outline:none;text-decoration:underline;color:tomato}a:hover{text-decoration:none}.left{float:left;width:auto;margin-right:10px}.right{float:right;width:auto;margin-left:10px}.center{display:block;text-align:center;margin:20px auto}blockquote{margin:20px 0;padding:10px 20px 0 20px;border:1px solid #E5E5DB;background:#FFF}ul{margin:2px 0 22px 17px}ul li{list-style-type:circle;margin:0 0 6px 0;padding:0 0 4px 5px}ol{margin:8px 0 22px 20px}ol li{margin:0 0 11px 0}#main,#logo,#menubar,#site_content,#footer{margin-left:auto;margin-right:auto}#header{height:240px}#logo{width:80%;position:relative;margin-bottom:45px}#logo h1,#logo h2{font:normal 300% 'century gothic',arial,sans-serif;border-bottom:0;text-transform:none;margin:0}#logo_text h1,#logo_text h1 a,#logo_text h1 a:hover{padding:22px 0 0 0;color:#000;letter-spacing:.1em;text-decoration:none}#logo_text h1 a .logo_colour{color:#068900}#logo_text h2{font-size:15px;padding:4px 0 0 0;color:#676767}#menubar{width:80%;height:72px;padding:0;background:transparent url(transparent.png) repeat}ul#menu,ul#menu li{float:left;margin:0;padding:0}ul#menu li{list-style:none}ul#menu li a{letter-spacing:.1em;font:normal 15px arial,sans-serif;display:block;float:left;height:37px;padding:29px 26px 6px 26px;text-align:center;color:#000;text-transform:uppercase;text-decoration:none;border-bottom:2px solid #068900;background:transparent}ul#menu li a:hover,ul#menu li.selected a,ul#menu li.selected a:hover{color:#FFF;background:#068900}#site_content{width:80%;overflow:hidden;margin:0 auto 0 auto;padding:20px 20px 20px 20px;background:transparent url(transparent_light.png) repeat}.sidebar{float:right;width:190px;padding:0 15px 20px 15px}.sidebar ul{width:178px;padding:4px 0 0 0;margin:4px 0 30px 0}.sidebar li{list-style:none;padding:0 0 7px 0}.sidebar li a,.sidebar li a:hover{padding:0 0 0 40px;display:block;background:transparent url(link.png) no-repeat left center}.sidebar li a.selected{color:#444;text-decoration:none}#content{text-align:left;padding:0}#content ul{margin:2px 0 22px 0}#content ul li{list-style-type:none;background:url(bullet.png) no-repeat;margin:0 0 6px 0;padding:0 0 4px 25px;line-height:1.5em}#footer{width:900px;font:normal 15px 'lucida sans unicode',arial,sans-serif;height:33px;padding:24px 0 5px 0;text-align:center;background:transparent url(transparent.png) repeat;color:#FFF;text-transform:uppercase;letter-spacing:.1em}#footer a{color:#FFF;text-decoration:none}#footer a:hover{color:#FFF;text-decoration:underline}footer{background:#068900;height:350px}footer h2{color:#fff;font-size:28px;width:80%;margin:auto}.search{color:#5D5D5D;border:1px solid #BBB;width:134px;padding:4px;font:100% arial,sans-serif}#colours{height:0;text-align:right;padding:66px 16px 0 300px}.form_settings{margin:15px 0 0 0}.form_settings p{padding:0 0 4px 0}.form_settings span{float:left;width:200px;text-align:left}.form_settings input,.form_settings textarea{padding:5px;width:299px;font:15px arial;border:1px solid #E5E5DB;background:#FFF;color:#47433F}.form_settings .submit{font:15px arial;border:1px solid;width:99px;margin:0 0 0 212px;height:33px;padding:2px 0 3px 0;cursor:pointer;background:#068900;color:#FFF}.form_settings textarea,.form_settings select{font:15px arial;width:299px}.form_settings select{width:310px}.form_settings .checkbox{margin:4px 0;padding:0;width:14px;border:0;background:none}.separator{width:100%;height:0;border-top:1px solid #D9D5CF;border-bottom:1px solid #FFF;margin:0 0 20px 0}table{margin:10px 0 30px 0}table tr th,table tr td{background:#3B3B3B;color:#FFF;padding:7px 4px;text-align:left}table tr td{background:#F0EFE2;color:#47433F;border-top:1px solid #FFF}
+<!--- style1--->.bgheader{
+		background-color:#636363;
+		height:70px;}
+		.bgcontent{
+		color:#7ed957;
+		padding-top:15px;font-weight: 500;
+    font-size: 26px;}
+		.contenth3{
+		color:white;
+		text-align:center;
+		    font-weight: 500;
+		}
+		.contentp{color:white;
+		text-align:center;
+		font-size: 16px;
+		}
+		.bottomcontent{
+		margin:auto;
+		padding-top:350px;}
+		
+		.hr1{
+		width:220px;
+		height:4px;
+		background-color:#28a745;}
+			.hr11{
+		max-width:565px;
+		height:4px;
+		background-color:#28a745;}
+		
+		<!--- style2 --->
+		
+		.Fintech_space{
+		margin-top:10px;}
+		
+	
+		
+		
+		.Fintech_space1{
+		margin-top:20px;
+		color:white;}
+		
+		
+		.Fintech_space2{
+		margin-top:20px;}
+		
+		.box1{
+		padding: 15px;
+		
+		}
+		.box2{
+		padding: 15px;
+		
+				
+
+		}
+		
+		.box{
+		padding: 15px;
+		
+		}
+		
+		.ourthiniking{
+		    color: rgb(112, 112, 112);
+		font-size:15px;
+		/*padding:20px;*/
+		text-align:center;}
+		
+		.ourthiniking1{
+		color:black;
+		
+		
+		
+		text-align:center;}
+		.Enabling {padding : 0;}
+		.Fintech11{
+		background-color:#636363;
+		padding:10px 0px 10px 10px;}
+		
+		.heading_bg1{
+		color:#7ed957; padding-bottom: 0px;}
+		.hr2{
+		width:175px;
+		height: 4px;
+		background-color:#7ed957;}
+		
+		.Enabling{
+		background-color:#636363;
+		color:#7ed957;    
+    padding: 10px 0px 10px 10px; font-size: 19px;}
+		.Custmer0{
+		color:white;font-weight: 600;
+    font-size: 20px;}
+		.rounded_line1{
+		border-top:3px solid #7ed957;
+	
+		}
+		.rounded_line2{
+		border-top:3px solid #7ed957;
+	
+		}
+		.rounded_line3{
+		border-top:3px solid #7ed957;
+		
+		}
+		
+		
+		
+		.textcolor{
+		color:white; margin-top: 15px;} 
+		
+		.contact_line{
+		width:120px;
+		height:5px;
+		background-color:green; }
+		
+		.welcoming1{
+		color:white;}
+		
+		
+		.boxborder{
+		 border: 1px solid white;
+  background-color: rgba(255,255,255,.9);}
+		
+		@media screen and (max-width: 322px) and (min-width: 320px) {
+		
+		
+		.hr1{
+		width:100px;
+		height:5px;}
+		.hr11{
+		width:100px;
+		height:5px;}
+		.rounded_line{
+		width:100px;
+		height:5px;
+		}
+				.rounded_line0{
+		width:100px;
+		height:5px;}
+		}
+		
+		.ip{
+		padding-left:200px;
+		padding-top:10px;}
+		
+		ipus{
+		width:20px;
+		height:10px;
+		background-color:red;}
+		
+		.footer12{
+		color:white;}
+		.Queries{
+		color:white;
+		font-size:22px; font-weight: 600 ;}
+		.footer_border{
+		border-top:1px solid white;
+}
+		.wallstreet{
+		color:white;
+		font-size:12px;
+		text-align:center; padding-top : 12px ; padding-bottom: 12px; font-size: 16px; font-weight: 400;}
+		.bgheader{
+		background-color:#636363;}
+.bg_style {background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;}
+.bg_manage {background-color: #fff ; border-top : 4px solid #0047af; margin-right : 25px;
+}
+	.justified {justify-content: center; }	
+	.box h4, .box1 h4, .box2 h4 {
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+}
+.color_trans {
+	color : #fff;
+	font-weight: 500;
+}
+.Queries {
+	margin-bottom : 0px;
+	padding-bottom: 2px;
+}
+.boxborder h5{padding-bottom : 0px;}
+.pos_rel {position: relative; font-size: 20px;
+    font-weight: 600;}
+    .pos_rel_col {position: relative; font-size: 20px;
+    font-weight: 600; color : #0047af;}
+.pos_rel:before {
+	position: absolute;
+	content: ' ' ; top : 0; width: 5px ; height: 20px; 
+	background-color: #7ed957 ; left : 0;
+}
+</style>
+
+ 
+
+<!--Easy Scroll Dots style-->
+<style>.scroll-indicator-controller{position:fixed;top:50%;transform:translate(0,-50%);right:20px;z-index:2}.scroll-indicator-controller.indi-mobile>div span{display:none}@media (max-width:1024px){.scroll-indicator-controller{right:10px}}.scroll-indicator-controller>div{width:20px;height:20px;position:relative;border-radius:50%;border:1px solid tomato;background:rgba(0,0,0,.25);margin:0 0 10px;cursor:pointer;transition:background .4s ease;will-change:transition}.scroll-indicator-controller>div span{color:tomato;position:absolute;right:calc(100% + 8px);white-space:nowrap;top:-1px;font-family:roboto;font-size:16px;line-height:17px;width:0;overflow:hidden;opacity:0;transform:translateX(10px);transition:all .4s ease;will-change:transition}@media (hover:none){.scroll-indicator-controller>div span{display:none}}.scroll-indicator-controller>div span:after{content:"-----";padding-left:5px;letter-spacing:-2px;font-family:roboto;vertical-align:text-top}@media (hover:hover),(-ms-high-contrast:none),(-ms-high-contrast:active){.scroll-indicator-controller>div:hover span{width:auto;opacity:1;overflow:visible;transform:translateX(0)}}.scroll-indicator-controller>div.active{background:tomato;border-color:rgba(0,0,0,.25)}@supports (-ms-ime-align:auto){.scroll-indicator-controller>div span{transition:opacity .4s ease}}</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+      <!---sctio1   --->
+        <div>
+            <div class="scroll-indicator" id="section01" data-scroll-indicator-title="First Section"></div>
+        </div>
+        
+       
+        
+          <div class="bgheader">
+			<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-10">
+					<div class="row align-items-center">
+						<div class="col-sm-6 ">
+							<img src="images/logo.png" class="img-fluid" alt="usa" width="80"/>
+						</div>
+						<div class="col-lg-6 text-center">
+							<h3 class="bgcontent">WST Fintech Solutions</h3>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			</div>
+			</div>
+		<section class="bg_style" style="background-image:url('images/Banner.png');">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="bottomcontent">
+							<h3 class="contenth3">Fintech Solutions</h3>
+							<center class="mb-3"><div class="hr1"></div></center>
+							<p class="contentp">Dedicated to the need of current and future leaders in the world of Finance<br>
+							Next Gen Techological Solutions for this rapidly growing and ever changing Financial sector.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+        </section>  
+		
+		<section class="section2">
+		</section>
+        </section>
+    <!--- sectione end   ---->
+	
+	
+	
+	
+	
+
+        <!-- HERE'S AN ANCHOR POINT (SCROLL INDICATOR) -->
+        <div>
+            <div class="scroll-indicator" id="section02" data-scroll-indicator-title="Another Section"></div>
+        </div>
+     <section style="background-image:url('images/banner-1.png');" class="pb-5 bg_style">
+            <div class="container">
+<div class="row justify-content-center pb-4">
+<div class="col-sm-0"></div>
+<div class="col-sm-10">
+<img src="images/logo.png" class="img-fluid" alt="usa" width="80"/>
+</div>
+</div>
+<br>
+<div class="Fintech_space"><div>
+<div class="row justify-content-center">
+
+<div class="col-sm-10">
+<div class="Fintech11">
+<h6 class="heading_bg1">Recognize and Provide industry leading Software Engimeering service Dedicated to Fintech</h6>
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+<div class="row justify-content-center">
+<div class="col-sm-0"></div>
+<div class="col-sm-10">
+<div class="Fintech_space1">
+<h3 class="color_trans">Our Thinking</h3>
+<div class="hr2"></div>
+<div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="Fintech_space2"></div>
+
+
+<div class="row justified">
+<div class="col-lg-3 bg_manage" >
+
+<div class="box"><h4 class="ourthiniking1">Revolutionizing finance
+sector with digital
+technology</h4>
+
+<p class="ourthiniking">
+With a digital first mindset and culture, digital products and applications permeate every aspect of modern financial business service. Accompanied by our digital transformation expertise, your organizations digital transformations efforts sped up to adapt to the new business environment.
+</p>
+</div>
+</div>
+<!-- <div class="col-sm-1"></div> -->
+<div class="col-lg-3 bg_manage">
+
+<div class="box1">
+	<div>
+		<h4 class="ourthiniking1">Agile functionality from mature agile processes and highly efficient software engineering</h4>
+
+		<p class="ourthiniking">
+		FinTech software development with agile capabilities by blending agile development and design thinking which enables organizations to keep up with rapid changes in financ 15
+		</p>
+	</div>
+	
+</div>
+</div>
+<!-- <div class="col-sm-1"></div> -->
+<div class="col-md-3 bg_manage" >
+	<div class="box2"><h4 class="ourthiniking1">The Powerful Combination</h4>
+<div class="col-sm-1"></div>
+<p class="ourthiniking">
+With the combination of technology strategy and business strategy, we take you from forming ideas through core transformation and modernization journey of development, testing and support using the latest tools and technologies with real business value while ensuring security & compliance.
+</p>
+</div>
+</div>
+
+</div>
+</div> 
+        </section>
+      
+ <!---sctio3   --->
+        <div>
+            <div class="scroll-indicator" id="section03" data-scroll-indicator-title="First Section"></div>
+        </div>
+        
+       
+                 <section style="background-image:url('images/city.jpg');" class=" bg_style">
+         
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-sm-10">
+<img src="images/logo.png" class="img-fluid" alt="usa" width="80"/>
+</div>
+
+</div>
+</div>
+
+
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="bottomcontent">
+<h3 class="contenth3">Empowering Entities For A Digitalized Future
+</h3>
+<center class="mb-3"><div class="hr11"></div> </center>
+<p class="contentp">Dedicated to the need of current and future leaders in the world of Finance<br>
+Next Gen Techological Solutions for this rapidly growing and ever changing Financial sector.</p>
+</div>
+</div>
+</div>
+</div>
+        </section>  
+		
+		<section class="section2">
+		</section>
+        </section>
+    <!--- sectione end   ---->
+	
+	<!---sctio4  
+        <div>
+            <div class="scroll-indicator" id="section05" data-scroll-indicator-title="First Section"></div>
+        </div>
+        
+       
+                 <section style="background-image:url('images/banner-4.png');">
+         
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-4">
+<img src="images/logo.png" class="img-fluid" alt="usa" width="80"/>
+</div>
+</div>
+<br>
+<div class="Fintech_space"><div>
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+<div class="Fintech11">
+<h5 class="header-box">Traditional banks evolving into purpose-driven financial institutions to enable future-proofing
+and achieve sustainable growth. </h5>
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+<div class="Fintech10">
+<h6 class="DataFraework">Data Framework / Migrations / Ensuring Security & Compliance 
+</h6>
+        
+<p class="line10"></p>
+<p class="Presenceoftraditional">
+By providing extra support to latest technology developments in the industry, a smooth workflow is guaranteed  with advanced data framework for all data migrations accompanied by requirement exceeding security and compliance. 
+</p>
+</div>
+</div>
+
+
+</div>
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+<div class="Fintech10">
+<h6 class="Custmer">Optimized Customer Portfolio Framework</h6>
+<p class="line11"></p>
+<p class="Presenceoftraditional">With incredible amount of exciting innovation happening, mature technology at its best still needs re-architecting  to enable organizations to Carry out and implement variety of modern/convenient functions where rapid technology change always find its way in to the finance world.</P></DIV>
+</div>
+
+
+</div>
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+<div class="Fintech10">
+<h6 class="Custmer">Tapping Into Advance Analytics</h6>
+<p class="line21"></p>
+<p class="Presenceoftraditional"> Building the product from ground up with simplicity, easy to navigate intelligent interface, all while satisfying the condition of hybrid Containerization for scalability and transitioning in to different ecosystems.</P></DIV>
+</div>
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+<div class="Fintech10">
+<h6 class="Custmer">Niche Digital Platforms</h6>
+<p class="line22"></p>
+<p class="Presenceoftraditional"> Building the product from ground up with simplicity, easy to navigate intelligent interface, all while satisfying the condition of hybrid Containerization for scalability and transitioning in to different ecosystems.</P></DIV>
+</div>
+        </section>  
+		
+		<section class="section2">
+		</section>
+        </section>
+    <!--- sectione end   ---->
+       <div>
+            <div class="scroll-indicator" id="section04" data-scroll-indicator-title="First Section"></div>
+        </div>
+        
+       
+<section style="background-image:url('images/globe.png');">
+
+
+
+<div class="container">
+<div class="row justify-content-center mb-4">
+
+<div class="col-sm-10">
+<img src="images/logo.png" class="img-fluid" alt="usa" width="80"/>
+</div>
+</div>
+  </div>
+  <br>
+  <div class="container">
+<div class="row justify-content-center">
+
+<div class="col-sm-10">
+<h5 class="Enabling mb-3">Enabling Fin Tech by transformation traditional Retail banking
+</h5>
+</div>
+</div>
+  </div>
+  
+  <br>
+   <div class="container">
+<div class="row justify-content-center">
+
+<div class="col-sm-10">
+	<div class="cus_grid_mr mb-5">
+		<h5 class="Custmer0">Customer Relationship Management
+		</h5>
+		<div class="rounded_line1"></div>
+		<p class="textcolor">Presence of traditional in person/face to face consumer support may be still required at some level, the future lies where ever changing customer sentiments demands for a complete digital transformation that supports a seamless experience, at finger tips. Let us accelerate your FinTech product development with highly innovative technology/user interface, thus providing the world class financial services for this tech driven era.</p>
+	</div>
+	<div class="cus_grid_mr mb-5">
+				<h5 class="Custmer0">Re- architecting of existing products/applications
+
+		</h5>
+		<div class="rounded_line2"></div>
+		<div>
+		<p class="textcolor">With incredible amount of exciting innovation happening, mature technology at its best still needs re-architecting to enable organizations to Carry out and implement variety of modern/convenient functions where rapid technology change always find its way in to the finance world</p></div>
+	</div>
+	<div class="cus_grid_mr mb-5">
+		<h5 class="Custmer0">Innovative Software development services dedicated to FinTech
+
+
+		</h5>
+		<div class="rounded_line3"></div>
+		<div>
+		<p class="textcolor">Building the product from ground up with simplicity, easy to navigate intelligent interface, all while satisfying the condition of hybrid Containerization for scalability and transitioning in to different ecosystems.</p></div>
+	</div>
+</div>
+</div>
+ <div class="scroll-indicator" id="section05" data-scroll-indicator-title="First Section"></div>
+  </div>
+  
+</section>	
+<section style="background-image:url('images/globe.png');">
+
+
+
+<div class="container">
+<div class="row justify-content-center mb-4">
+
+<div class="col-sm-10">
+<img src="images/logo.png" class="img-fluid" alt="usa" width="80"/>
+</div>
+</div>
+  </div>
+  <br>
+  <div class="container">
+<div class="row justify-content-center">
+
+<div class="col-sm-10">
+<h5 class="Enabling mb-3">Traditional banks evolving into purpose-driven financial institutions to enable future-proofing
+and achieve sustainable growth.
+</h5>
+</div>
+</div>
+  </div>
+  
+  <br>
+   <div class="container">
+<div class="row justify-content-center">
+
+<div class="col-sm-10">
+	<div class="cus_grid_mr mb-5">
+		<h5 class="Custmer0">Data Framework / Migrations / Ensuring Security & Compliance
+		</h5>
+		<div class="rounded_line4"></div>
+		<p class="textcolor">By providing extra support to latest technology developments in the industry, a smooth workflow is guaranteed  with advanced data framework for all data migrations accompanied by requirement exceeding security and compliance. </p>
+	</div>
+	<div class="cus_grid_mr mb-5">
+				<h5 class="Custmer0">Optimized Customer Portfolio Framework
+
+		</h5>
+		<div class="rounded_line5"></div>
+		<div>
+		<p class="textcolor">Complete optimization of consumer portfolio framework with core financial services at heart.</p></div>
+	</div>
+	<div class="cus_grid_mr mb-5">
+		<h5 class="Custmer0">Tapping Into Advance Analytics
+
+
+		</h5>
+		<div class="rounded_line6"></div>
+		<div>
+		<p class="textcolor">To stand out in a competitive landscape where the impact of evolving digital technologies are compelling financial institutions to shift to a more innovative business model, delivering superior customer experience by creation of incredible software with focus on close collaboration innovation and creating world class products with agility.</p></div>
+	</div>
+	<div class="cus_grid_mr mb-5">
+		<h5 class="Custmer0">Niche Digital Platforms
+
+
+		</h5>
+		<div class="rounded_line7"></div>
+		<div>
+		<p class="textcolor">Modernizing your environment with customer centered design, mapping and interaction identifiers which transforms into a completely differentiated experience.</p></div>
+	</div>
+</div>
+</div>
+ <div class="scroll-indicator" id="section06" data-scroll-indicator-title="First Section"></div>
+  </div>
+  
+</section>						
+
+
+<section style="background-image:url('images/banner-2.png');" class=" bg_style">
+
+
+
+	<div class="container">
+<div class="row justify-content-center mb-4">
+
+<div class="col-sm-10">
+<img src="images/logo.png" class="img-fluid" alt="usa" width="80"/>
+</div>
+
+</div>
+
+  </div>
+ 
+	<div class="container mb-4">
+<div class="row justify-content-center">
+
+<div class="col-sm-10">
+<h3 class="color_trans">Contact Us</h3>
+<div class="hr2"></div>
+
+</div>
+
+</div>
+
+  </div>
+    
+	<div class="container">
+<div class="row justify-content-center">
+
+<div class="col-sm-10">
+<p class="Queries">Welcoming Investors & Partners
+</p>
+</div>
+</div>
+  </div>
+  
+  
+  <div class="container">
+  <div class="row justify-content-center">
+<div class="col-sm-10">
+  <div class="boxborder  justify-content-space-around py-3">
+  	<!-- <span class="ipus"></span>  -->
+  	<div class="row">
+  		<div class="col-md-5 pl-5">
+  			<h5 class="pl-3 pos_rel">Please Contact us  </h5>
+  		</div>
+  		<div class="col-md-6">
+  			<h5 class="pl-3 pos_rel_col">IP@WSTLLC.US </h5>
+  			
+  		</div>
+  	</div>
+  	
+  	
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <br>
+   <div class="container">
+  <div class="row justify-content-center">
+<div class="col-sm-10">
+<p class="Queries mt-4">All Other Queries
+</p>
+  <div class="boxborder  justify-content-space-around py-3">
+  	<!-- <span class="ipus"></span>  -->
+  	<div class="row">
+  		<div class="col-md-5 pl-5">
+  			<h5 class="pl-3 pos_rel">Please Contact us  </h5>
+  		</div>
+  		<div class="col-md-6">
+  			<h5 class="pl-3 pos_rel_col">Rep@WSTLLC.US </h5>
+  			
+  		</div>
+  	</div>
+  	
+  	
+  </div>
+  </div>
+  </div>
+  </div>
+  <br><br><br><br>
+<div class="footer_border"></div>
+	
+	<p class="wallstreet mb-0"><b>All Rights Reserved@2020. WALL STREET TECH LLC</b></p>
+       
+   
+</section>
+<!--Easy Scroll Dots js-->
+<script>function dotsThrottle(a,b,c){var d,e,f,g=null,h=0;c||(c={});var i=function(){h=!1===c.leading?0:Date.now(),g=null,f=a.apply(d,e),g||(d=e=null)};return function(){var j=Date.now();h||!1!==c.leading||(h=j);var k=b-(j-h);return d=this,e=arguments,0>=k||k>b?(g&&(clearTimeout(g),g=null),h=j,f=a.apply(d,e),!g&&(d=e=null)):!g&&!1!==c.trailing&&(g=setTimeout(i,k)),f}}let dotFixedNavPresent=!1,dotFixedNavId="",dotFixedNavUp=!1;function easyScrollDots(a){let b=document.querySelectorAll(".scroll-indicator");if(!0===a.fixedNav?dotFixedNavPresent=!0:dotFixedNavPresent,dotFixedNavId=""!==a.fixedNavId&&a.fixedNavId,!0===a.fixedNavUpward?dotFixedNavUp=!0:dotFixedNavUp,b.length){document.querySelector("body").lastElementChild.insertAdjacentHTML("afterend","<div class=\"scroll-indicator-controller\"><span></span></div>");const a=document.querySelector(".scroll-indicator-controller");("undefined"!=typeof window.orientation||-1!==navigator.userAgent.indexOf("IEMobile"))&&a.classList.add("indi-mobile");const d=Array.prototype.slice.call(b);d.forEach(function(b,c){const d=b.getAttribute("id"),e=b.getAttribute("data-scroll-indicator-title");let f="";0==c&&(f="active"),a.lastElementChild.insertAdjacentHTML("afterend","<div class=\""+f+"\" data-indi-controller-id=\""+d+"\" onclick=\"scrollIndiClicked('"+d+"');\"><span>"+e+"</span><div></div></div>")});const f=a.querySelectorAll("[data-indi-controller-id]");var c=dotsThrottle(function(){let b={};d.forEach(function(a){const c=a.getAttribute("id"),d=a.getBoundingClientRect().top;b[c]=d});const c=Object.keys(b).map(function(a){return b[a]}),g=function(){const a=c.filter(function(a){return-150<a});return Math.min.apply(null,a)};Object.keys(b).forEach(function(c){b[c]==g()&&(Array.prototype.forEach.call(f,function(a){a.classList.contains("active")&&a.classList.remove("active")}),a.querySelector("[data-indi-controller-id=\""+c+"\"]").classList.add("active"))})},300);window.onscroll=function(){c()}}}function scrollIndiClicked(a){if(window.jQuery){if(!0==dotFixedNavPresent&&dotFixedNavId.length){const b=document.getElementById(dotFixedNavId),c=b.clientHeight,d=$("html, body"),e=$("#"+a);if(!0===dotFixedNavUp){d.animate({scrollTop:e.offset().top},700);const a=document.body.getBoundingClientRect().top;setTimeout(function(){document.body.getBoundingClientRect().top>a&&d.animate({scrollTop:e.offset().top-c},400)},400)}else d.animate({scrollTop:e.offset().top-c},700)}else $("html, body").animate({scrollTop:$("#"+a).offset().top},700);}else if(!0==dotFixedNavPresent&&dotFixedNavId.length){const b=document.getElementById(dotFixedNavId),c=b.clientHeight,d=document.getElementById(a);if(!0===dotFixedNavUp){window.scrollTo({top:d.offsetTop,left:0,behavior:"smooth"});const a=document.body.getBoundingClientRect().top;setTimeout(function(){document.body.getBoundingClientRect().top>a&&window.scrollTo({top:d.offsetTop-c,left:0,behavior:"smooth"})},400)}else window.scrollTo({top:d.offsetTop-c,left:0,behavior:"smooth"})}else window.scrollTo({top:document.getElementById(a).offsetTop,left:0,behavior:"smooth"})}</script>
+<!--Easy Scroll Dots init-->
+<script>
+easyScrollDots({
+  'fixedNav': false,
+  'fixedNavId': '',
+  'fixedNavUpward': false
+});
+</script>
+</body>
+</html>
